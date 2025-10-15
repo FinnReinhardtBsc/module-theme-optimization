@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <!-- Clear the prefetch & prerender cache after a product is successfully added to the cart -->
+    <event name="checkout_cart_add_product_complete">
+        <observer name="clear_site_data_header_add" instance="Basecom\Catalog\Observer\AddClearSiteDataHeader"/>
+    </event>
+    <!-- Clear the prefetch & prerender cache after a cart item is successfully -->
+    <event name="checkout_cart_update_item_complete">
+        <observer name="clear_site_data_header_update" instance="Basecom\Catalog\Observer\AddClearSiteDataHeader"/>
+    </event>
+</config>
