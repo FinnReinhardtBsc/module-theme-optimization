@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Basecom\Catalog\Observer;
+namespace MageOS\ThemeOptimization\Observer;
 
 use Magento\Framework\App\Response\HttpInterface;
 use Magento\Framework\Event\Observer;
