@@ -9,7 +9,7 @@ use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 
 /**
- * Stale prefetches can be cleared using the `prefetchCache` and `prerenderCache` value of the `Clear-Site-Data response header.
+ * Stale speculative loads can be cleared using the `prefetchCache` and `prerenderCache` value of the `Clear-Site-Data` response header.
  * See [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Clear-Site-Data#prefetchcache)
  */
 class AddClearSiteDataHeader implements ObserverInterface

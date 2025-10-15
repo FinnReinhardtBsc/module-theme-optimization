@@ -6,7 +6,7 @@
     <event name="checkout_cart_add_product_complete">
         <observer name="clear_site_data_header_add" instance="MageOS\ThemeOptimization\Observer\AddClearSiteDataHeader"/>
     </event>
-    <!-- Clear the prefetch & prerender cache after a cart item is successfully -->
+    <!-- Clear the prefetch & prerender cache after a cart item is successfully updated -->
     <event name="checkout_cart_update_item_complete">
         <observer name="clear_site_data_header_update" instance="MageOS\ThemeOptimization\Observer\AddClearSiteDataHeader"/>
     </event>
